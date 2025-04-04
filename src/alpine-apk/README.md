@@ -1,7 +1,7 @@
 
-# alpine-apk (alpine-apk)
+# Alpine's apk packages (alpine-apk)
 
-Installs Alpine's packages
+Installs packages via alpine's apk.
 
 ## Example Usage
 
@@ -15,25 +15,11 @@ Installs Alpine's packages
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| packages | List of packages to install. | array | - |
-| upgradePackages | Upgrade apk packages? | boolean | false |
+| packages | A comma-separated list of packages to install using apk. If not specified, no packages will be installed. | string | - |
+| upgradePackages | Whether to upgrade all packages using apk. | boolean | false |
 
 
-## How to specify packages?
-
-Specify package names separated by commas in the `packages` option.
-
-The following example installs `curl` and `nano`.
-
-```json
-"features": {
-    "ghcr.io/MuhmdRaouf/devcontainer-features/alpine-apk:0.0.1": {
-        "packages": ["curl", "nano"],
-        "upgradePackages": true
-    }
-}
-```
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/MuhmdRaouf/devcontainers-features/blob/main/src/alpine-apk/devcontainer-feature.json)._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/MuhmdRaouf/devcontainers-features/blob/main/src/alpine-apk/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
