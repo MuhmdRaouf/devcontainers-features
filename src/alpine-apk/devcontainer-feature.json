@@ -1,0 +1,7 @@
+{
+    "name": "alpine-apk",
+    "id": "alpine-apk",
+    "version": "0.0.1",
+    "description": "Installs Alpine's packages",
+    "documentationURL": "https://github.com/MuhmdRaouf/devcontainers-features/tree/main/src/alpine-apk"
+  }
