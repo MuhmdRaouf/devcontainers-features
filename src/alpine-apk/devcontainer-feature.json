@@ -1,0 +1,23 @@
+{
+    "id": "alpine-apk",
+    "version": "0.0.1",
+    "name": "Alpine's apk packages",
+    "description": "Installs packages via alpine's apk.",
+    "documentationURL": "https://github.com/MuhmdRaouf/devcontainers-features/tree/main/src/alpine-apk",
+    "options": {
+        "packages": {
+            "type": "string",
+            "default": "",
+            "description": "A comma-separated list of packages to install using apk. If not specified, no packages will be installed.",
+            "proposals": [
+              "",
+              "curl,git"
+            ]
+        },
+        "upgradePackages": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to upgrade all packages using apk."
+      }
+    }
+  }
